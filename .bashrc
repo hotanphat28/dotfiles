@@ -1,5 +1,9 @@
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# ==== directory alias ====
+
+alias ll="ls -lah" # to display directories and files in line included hidden ones
+
 # ==== git commands alias ====
 
 alias gclone="git clone $@" # to clone a repo
