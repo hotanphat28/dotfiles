@@ -2,7 +2,8 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # ==== directory alias ====
 
-alias ll="ls -lah" # to display directories and files in line included hidden ones
+# alias ll="ls -lah" # to display directories and files including hidden ones in table
+alias ll="eza -lah --icons" to display directory and fields including hidden ones in table
 
 # ==== git commands alias ====
 
@@ -23,3 +24,6 @@ lazyg(){
 
 # to apply custom oh-my-posh theme to the bash prompt
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/hotanphat.omp.json)"
+
+# setup zoxide on shell
+eval "$(zoxide init bash)"
