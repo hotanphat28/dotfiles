@@ -3,7 +3,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # ==== directory alias ====
 
 # alias ll="ls -lah" # to display directories and files including hidden ones in table
-alias ll="eza -lah --icons" to display directory and fields including hidden ones in table
+alias ll="eza -lah --icons" # to display directory and fields including hidden ones in table
 
 # ==== git commands alias ====
 
