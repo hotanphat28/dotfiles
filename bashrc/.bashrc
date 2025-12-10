@@ -15,6 +15,7 @@ alias gnew="git checkout -b $@ $@" # to create a new branch from a branch
 alias gcheckout="git checkout $@" # to checkout a local branch
 alias gmerge="git merge $@" # to merge from a local branch
 alias gpull="git pull" # to pull new changes of the current branch
+alias gpush="git push" # to push new changes of the current branch
 
 lazyg(){
 	git add .
