@@ -1,0 +1,25 @@
+import = [
+  "~/.config/alacritty/hotanphat.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Regular"
