@@ -24,7 +24,7 @@ lazyg(){
 }
 
 # to apply custom oh-my-posh theme to the bash prompt
-eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/hotanphat.omp.json)"
+eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/hotanphat2.omp.json)"
 
 # setup zoxide on shell
 eval "$(zoxide init bash)"
