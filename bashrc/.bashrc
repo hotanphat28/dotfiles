@@ -19,9 +19,14 @@ alias gpush="git push" # to push new changes of the current branch
 
 lazyg(){
 	git add .
-	git commit -m "$@"
+	git commit -m $@
 	git push
 }
+
+# ==== wsl ====
+
+alias wsll="wsl -l -v" # to show all wsl local verbose
+alias wsllo="wsl -l -o" # to show all wsl online verbose
 
 # to apply custom oh-my-posh theme to the bash prompt
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/hotanphat2.omp.json)"
