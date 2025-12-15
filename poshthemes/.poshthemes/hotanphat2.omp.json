@@ -7,6 +7,12 @@
 			"alignment": "left",
 			"segments": [
 				{
+          				"type": "root",
+          				"style": "plain",
+          				"foreground": "#ED1C24",
+          				"template": "\uf0e7 "
+        			},
+				{
 					"type": "os",
 					"style": "plain",
 					"foreground": "#FFC90E",
