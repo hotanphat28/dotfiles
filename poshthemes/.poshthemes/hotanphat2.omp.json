@@ -7,11 +7,11 @@
 			"alignment": "left",
 			"segments": [
 				{
-          				"type": "root",
-          				"style": "plain",
-          				"foreground": "#ED1C24",
-          				"template": "\uf0e7 "
-        			},
+					"type": "root",
+					"style": "plain",
+					"foreground": "#ED1C24",
+					"template": "\uf0e7 "
+				},
 				{
 					"type": "os",
 					"style": "plain",
@@ -41,7 +41,7 @@
 					"type": "git",
 					"style": "plain",
 					"foreground": "#646464",
-					"template": "{{ trunc 10 .HEAD }} {{ if .Working.Changed }}<#ED1C24>\uf044</>{{ end }}{{ if .Staging.Changed }}<#22B14C>\uf046</>{{ end }} ",
+					"template": "{{ trunc 10 .HEAD }}{{ if .Working.Changed }} <#ED1C24>\uf044 {{ add .Working.Added .Working.Modified .Working.Deleted .Working.Untracked }}</>{{ end }}{{ if .Staging.Changed }} <#22B14C>\uf046 {{ add .Staging.Added .Staging.Modified .Staging.Deleted }}</>{{ end }} ",
 					"properties": {
 						"fetch_status": true,
 						"fetch_upstream_icon": false
