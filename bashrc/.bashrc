@@ -1,11 +1,17 @@
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-# ==== directory alias ====
+# :::: directory alias ::::
 
-# alias ll="ls -lah" # to display directories and files including hidden ones in table
-alias ll="eza -lah --icons" # to display directory and fields including hidden ones in table
+# check if `eza` is installed
+if command -v eza > /dev/null 2>&1; then
+    # use `eza` with icons
+    alias ll="eza -lah --icons"
+else
+    # fallback to standard `ls`
+    alias ll="ls -lah"
+fi
 
-# ==== git commands alias ====
+# :::: git alias ::::
 
 alias gclone="git clone $@" # to clone a repo
 alias gbranch="git branch" # to list all local branches
@@ -23,12 +29,12 @@ lazyg(){
 	git push
 }
 
-# ==== wsl ====
+# :::: wsl alias ::::
 
 alias wsll="wsl -l -v" # to show all wsl local verbose
 alias wsllo="wsl -l -o" # to show all wsl online verbose
 
-# to apply custom oh-my-posh theme to the bash prompt
+# apply custom oh-my-posh theme to the bash prompt
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/hotanphat2.omp.json)"
 
 # setup zoxide on shell
