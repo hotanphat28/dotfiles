@@ -15,7 +15,7 @@
 	"display": {
 		"separator": "  ",
 		"color": {
-			"keys": "cyan" // The icons/text labels
+			"keys": "magenta" // The icons/text labels
 		}
 	},
 	"modules": [
@@ -26,27 +26,27 @@
 		{
 			"type": "os",
 			"key": " ",
-			"keyColor": "cyan"
+			"keyColor": "magenta"
 		},
 		{
 			"type": "kernel",
 			"key": " ",
-			"keyColor": "cyan"
+			"keyColor": "magenta"
 		},
 		{
 			"type": "uptime",
 			"key": " ",
-			"keyColor": "cyan"
+			"keyColor": "magenta"
 		},
 		{
 			"type": "packages",
 			"key": " ",
-			"keyColor": "cyan"
+			"keyColor": "magenta"
 		},
 		{
 			"type": "shell",
 			"key": " ",
-			"keyColor": "cyan"
+			"keyColor": "magenta"
 		},
 
 		// --- Separator ---
@@ -79,6 +79,13 @@
 		},
 
 		"break",
-		"colors"
+		{
+			"type": "custom",
+			// \u001b[33m = Yellow
+			// \u001b[35m = Magenta (Purple)
+			// \u001b[36m = magenta
+			// \u001b[0m  = Reset to default text color
+			"format": "\u001b[33m● \u001b[35m● \u001b[36m●  \u001b[0mhotanphat28"
+		}
 	]
 }
