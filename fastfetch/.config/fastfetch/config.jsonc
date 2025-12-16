@@ -1,0 +1,84 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"source": "~/.config/fastfetch/hotanphat28.txt",
+		"type": "file",
+		"color": {
+			"1": "yellow", // The eyes ($1)
+			"2": "magenta" // The face ($2) - using Magenta to match your Purple brand
+		},
+		"padding": {
+			"top": 2,
+			"left": 2
+		}
+	},
+	"display": {
+		"separator": "  ",
+		"color": {
+			"keys": "cyan" // The icons/text labels
+		}
+	},
+	"modules": [
+		"title",
+		"separator",
+
+		// --- Software ---
+		{
+			"type": "os",
+			"key": " ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "kernel",
+			"key": " ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "uptime",
+			"key": " ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "packages",
+			"key": " ",
+			"keyColor": "cyan"
+		},
+		{
+			"type": "shell",
+			"key": " ",
+			"keyColor": "cyan"
+		},
+
+		// --- Separator ---
+		{
+			"type": "custom",
+			"format": "──────────────────────────────",
+			"outputColor": "bright_black"
+		},
+
+		// --- Hardware ---
+		{
+			"type": "cpu",
+			"key": " ", // Nerd Font v3 CPU icon
+			"keyColor": "yellow"
+		},
+		{
+			"type": "gpu",
+			"key": "󰢮 ",
+			"keyColor": "yellow"
+		},
+		{
+			"type": "memory",
+			"key": " ",
+			"keyColor": "yellow"
+		},
+		{
+			"type": "display",
+			"key": "󰍹 ",
+			"keyColor": "yellow"
+		},
+
+		"break",
+		"colors"
+	]
+}
