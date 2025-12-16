@@ -13,19 +13,40 @@
 		}
 	},
 	"display": {
-		"separator": "  ",
+		// 4. COLON = Color 8 (Bright Black)
+		// We set the separator to a colon to match Neofetch standard behavior
+		"separator": ": ",
 		"color": {
-			"keys": "magenta" // The icons/text labels
+			// 3. SUBTITLE/KEYS = Color 6 (Cyan)
+			"keys": "cyan",
+
+			// 4. COLON/SEPARATOR = Color 8 (Bright Black)
+			"separator": "bright_black",
+
+			// 5. INFO/OUTPUT = Color 7 (White)
+			"output": "white"
 		}
 	},
 	"modules": [
-		"title",
-		"separator",
-
+		// 1. TITLE = Color 3 (Yellow) & 5 (Magenta)
+		{
+			"type": "title",
+			"color": {
+				"user": "yellow", // Color 3
+				"at": "magenta", // Color 5
+				"host": "yellow" // Color 3
+			}
+		},
+		// 2. UNDERLINE = Color 5 (Magenta)
+		{
+			"type": "custom",
+			"format": "──────────────────────────────",
+			"outputColor": "magenta" // Color 5
+		},
 		// --- Software ---
 		{
 			"type": "os",
-			"key": " ",
+			"key": " ",
 			"keyColor": "magenta"
 		},
 		{
