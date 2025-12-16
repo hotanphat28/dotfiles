@@ -41,7 +41,7 @@
 					"type": "git",
 					"style": "plain",
 					"foreground": "#646464",
-					"template": "{{ trunc 10 .HEAD }}{{ if .Working.Changed }} <#ED1C24>\uf044 {{ add .Working.Added .Working.Modified .Working.Deleted .Working.Untracked }}</>{{ end }}{{ if .Staging.Changed }} <#22B14C>\uf046 {{ add .Staging.Added .Staging.Modified .Staging.Deleted }}</>{{ end }} ",
+					"template": "{{ trunc 10 .HEAD }}{{ if gt .Behind 0 }} <#C90EFF>\u2193 {{ .Behind }}</>{{ end }}{{ if gt .Ahead 0 }} <#0EFFC9>\u2191 {{ .Ahead }}</>{{ end }}{{ if .Working.Changed }} <#ED1C24>\uf044 {{ add .Working.Added .Working.Modified .Working.Deleted .Working.Untracked }}</>{{ end }}{{ if .Staging.Changed }} <#22B14C>\uf046 {{ add .Staging.Added .Staging.Modified .Staging.Deleted }}</>{{ end }} ",
 					"properties": {
 						"fetch_status": true,
 						"fetch_upstream_icon": false
