@@ -1,5 +1,8 @@
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+# :::: fetch system ::::
+command -v fastfetch >/dev/null 2>&1 && fastfetch || { command -v neofetch >/dev/null 2>&1 && neofetch; }
+
 # :::: directory alias ::::
 
 # check if `eza` is installed
