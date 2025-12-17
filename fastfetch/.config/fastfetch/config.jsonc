@@ -4,12 +4,11 @@
 		"source": "~/.config/fastfetch/hotanphat28_2.txt",
 		"type": "file",
 		"color": {
-			"1": "yellow", // The eyes ($1)
-			"2": "magenta" // The face ($2) - using Magenta to match your Purple brand
+			"1": "#FFC90E"
 		},
 		"padding": {
-			"top": 2,
-			"left": 2
+			"left": 10,
+			"right": 10
 		}
 	},
 	"display": {
@@ -18,13 +17,13 @@
 		"separator": ": ",
 		"color": {
 			// 3. SUBTITLE/KEYS = Color 6 (Cyan)
-			"keys": "cyan",
+			"keys": "#FFC90E",
 
 			// 4. COLON/SEPARATOR = Color 8 (Bright Black)
-			"separator": "bright_black",
+			"separator": "646464",
 
 			// 5. INFO/OUTPUT = Color 7 (White)
-			"output": "white"
+			"output": "#FFFFFF"
 		}
 	},
 	"modules": [
@@ -32,81 +31,95 @@
 		{
 			"type": "title",
 			"color": {
-				"user": "yellow", // Color 3
-				"at": "magenta", // Color 5
-				"host": "yellow" // Color 3
+				"user": "#FFC90E", // Color 3
+				"at": "#646464", // Color 5
+				"host": "#FFC90E" // Color 3
 			}
 		},
-		// 2. UNDERLINE = Color 5 (Magenta)
+		// :::: Separator ::::
 		{
 			"type": "custom",
-			"format": "──────────────────────────────",
-			"outputColor": "magenta" // Color 5
+			"format": "::::::::::::::::::::::::::::::",
+			"outputColor": "#646464" // Color 5
 		},
-		// --- Software ---
+		// :::: Software ::::
 		{
 			"type": "os",
 			"key": " ",
-			"keyColor": "magenta"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "kernel",
 			"key": " ",
-			"keyColor": "magenta"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "uptime",
 			"key": " ",
-			"keyColor": "magenta"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "packages",
 			"key": " ",
-			"keyColor": "magenta"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "shell",
 			"key": " ",
-			"keyColor": "magenta"
+			"keyColor": "#FFC90E"
 		},
 
-		// --- Separator ---
+		// :::: Separator ::::
 		{
 			"type": "custom",
-			"format": "──────────────────────────────",
-			"outputColor": "bright_black"
+			"format": "::::::::::::::::::::::::::::::",
+			"outputColor": "646464"
 		},
 
-		// --- Hardware ---
+		// :::: Hardware ::::
 		{
 			"type": "cpu",
 			"key": " ", // Nerd Font v3 CPU icon
-			"keyColor": "yellow"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "gpu",
 			"key": "󰢮 ",
-			"keyColor": "yellow"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "memory",
 			"key": " ",
-			"keyColor": "yellow"
+			"keyColor": "#FFC90E"
 		},
 		{
 			"type": "display",
 			"key": "󰍹 ",
-			"keyColor": "yellow"
+			"keyColor": "#FFC90E"
 		},
 
-		"break",
+		// ::::: Separator :::::
 		{
 			"type": "custom",
-			// \u001b[33m = Yellow
-			// \u001b[35m = Magenta (Purple)
-			// \u001b[36m = magenta
-			// \u001b[0m  = Reset to default text color
-			"format": "\u001b[33m● \u001b[35m● \u001b[36m●  \u001b[0mhotanphat28"
-		}
+			"format": "::::::::::::::::::::::::::::::",
+			"outputColor": "646464"
+		},
+
+		// ::::: Brand Footer ::::
+		{
+			"type": "custom",
+			// Truecolor ANSI Format: \u001b[38;2;R;G;Bm
+			// 1. Golden     (#FFC90E) -> 255;201;14
+			// 2. White      (#FFFFFF) -> 255;255;255
+			// 3. Light      (#F4F4F4) -> 244;244;244
+			// 4. Light-Gray (#D6D6D6) -> 214;214;214
+			// 5. Dark-Gray  (#646464) -> 100;100;100
+			// 6. Dark       (#282828) -> 40;40;40
+			// 7. Black      (#101010) -> 16;16;16
+
+			"format": "\u001b[38;2;255;255;255m● \u001b[38;2;244;244;244m● \u001b[38;2;214;214;214m● \u001b[38;2;100;100;100m● \u001b[38;2;40;40;40m● \u001b[38;2;16;16;16m● \u001b[38;2;255;201;14m●"
+		},
+
+		"break"
 	]
 }
