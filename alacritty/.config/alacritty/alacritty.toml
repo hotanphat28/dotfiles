@@ -38,7 +38,8 @@ style = "Italic"
 [window]
 padding = { x = 10, y = 10 }
 dynamic_padding = true
-opacity = 1.0
+opacity = 0.9
+blur = true
 
 # ============================================================
 # COLORS
