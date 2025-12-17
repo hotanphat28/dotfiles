@@ -1,32 +1,120 @@
-import = [
-  "~/.config/alacritty/hotanphat.toml"
-]
+# ============================================================
+# BRAND IDENTITY: GOLDEN & GREYSCALE
+# ============================================================
+# Brand Accent: Golden (#FFC90E)
+# Brand Neutrals: Dark (#282828), Black (#101010), 
+#                 Dark-Gray (#646464), Light-Gray (#D6D6D6),
+#                 Light (#F4F4F4), White (#FFFFFF)
+# ============================================================
 
+# Best Practice: Auto-reload config on save
 live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
 
-[window]
-padding = { x = 10, y = 10 }
-opacity = 0.9
-blur = true
-
+# ============================================================
+# FONT CONFIGURATION
+# ============================================================
 [font]
-size = 13.0
+size = 13.0 
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Regular"
 
 [font.bold]
 family = "CaskaydiaMono Nerd Font Mono"
 style = "Bold"
 
-[font.bold_italic]
-family = "CaskaydiaMono Nerd Font Mono"
-style = "Bold Italic"
-
 [font.italic]
 family = "CaskaydiaMono Nerd Font Mono"
 style = "Italic"
 
-[font.normal]
-family = "CaskaydiaMono Nerd Font Mono"
-style = "Regular"
+# ============================================================
+# WINDOW UI
+# Best Practice: Padding prevents text from touching edges
+# ============================================================
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+opacity = 1.0
+
+# ============================================================
+# COLORS
+# ============================================================
+
+[colors.primary]
+background = "#282828"      # Brand Dark
+foreground = "#F4F4F4"      # Brand Light
+dim_foreground = "#D6D6D6"  # Brand Light-Gray
+bright_foreground = "#FFFFFF" # Brand White
+
+[colors.cursor]
+text = "#101010"            # Brand Black
+cursor = "#FFC90E"          # Brand Golden (Your only Main Accent)
+
+[colors.vi_mode_cursor]
+text = "#101010"            # Brand Black
+cursor = "#FFC90E"          # Brand Golden
+
+[colors.search.matches]
+foreground = "#101010"      # Brand Black
+background = "#D6D6D6"      # Brand Light-Gray (Subtle match)
+
+[colors.search.focused_match]
+foreground = "#101010"      # Brand Black
+background = "#FFC90E"      # Brand Golden (Active match)
+
+[colors.footer_bar]
+foreground = "#101010"      # Brand Black
+background = "#D6D6D6"      # Brand Light-Gray
+
+[colors.hints.start]
+foreground = "#101010"      # Brand Black
+background = "#FFC90E"      # Brand Golden
+
+[colors.hints.end]
+foreground = "#101010"      # Brand Black
+background = "#D6D6D6"      # Brand Light-Gray
+
+[colors.selection]
+text = "#101010"            # Brand Black
+background = "#D6D6D6"      # Brand Light-Gray
+
+# ------------------------------------------------------------
+# STANDARD COLORS
+# ------------------------------------------------------------
+[colors.normal]
+black   = "#101010"         # Brand Black
+red     = "#F38BA8"         # [SAFE] Catppuccin Red (Syntax Error)
+green   = "#A6E3A1"         # [SAFE] Catppuccin Green (Diff Add/Success)
+yellow  = "#FFC90E"         # Brand Golden
+blue    = "#89B4FA"         # [SAFE] Catppuccin Blue (Folder/Info)
+magenta = "#F5C2E7"         # [SAFE] Catppuccin Magenta (Reverted for syntax safety)
+cyan    = "#94E2D5"         # [SAFE] Catppuccin Cyan (Reverted for syntax safety)
+white   = "#D6D6D6"         # Brand Light-Gray
+
+# ------------------------------------------------------------
+# BRIGHT COLORS
+# Best Practice: Bright Black mapped to Dark-Gray for comments
+# ------------------------------------------------------------
+[colors.bright]
+black   = "#646464"         # Brand Dark-Gray (Comments)
+red     = "#F38BA8"         # [SAFE] Catppuccin Red
+green   = "#A6E3A1"         # [SAFE] Catppuccin Green
+yellow  = "#FFC90E"         # Brand Golden
+blue    = "#89B4FA"         # [SAFE] Catppuccin Blue
+magenta = "#F5C2E7"         # [SAFE] Catppuccin Magenta
+cyan    = "#94E2D5"         # [SAFE] Catppuccin Cyan
+white   = "#FFFFFF"         # Brand White
+
+[colors.dim]
+black   = "#101010"
+red     = "#F38BA8"
+green   = "#A6E3A1"
+yellow  = "#FFC90E"
+blue    = "#89B4FA"
+magenta = "#F5C2E7"
+cyan    = "#94E2D5"
+white   = "#D6D6D6"
