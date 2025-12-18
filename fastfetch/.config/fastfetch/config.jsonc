@@ -7,34 +7,21 @@
 			"1": "#FFC90E"
 		},
 		"padding": {
+			"top": 0,
 			"left": 10,
 			"right": 10
 		}
 	},
 	"display": {
-		// 4. COLON = Color 8 (Bright Black)
-		// We set the separator to a colon to match Neofetch standard behavior
-		"separator": ": ",
+		"separator": ": ", // Separator between keys and values
 		"color": {
-			// 3. SUBTITLE/KEYS = Color 6 (Cyan)
-			"keys": "#FFC90E",
-
-			// 4. COLON/SEPARATOR = Color 8 (Bright Black)
-			"separator": "646464",
-
-			// 5. INFO/OUTPUT = Color 7 (White)
-			"output": "#FFFFFF"
+			"keys": "#FFC90E", // Key color
+			"title": "#FFC90E" // Title color
 		}
 	},
 	"modules": [
-		// 1. TITLE = Color 3 (Yellow) & 5 (Magenta)
 		{
-			"type": "title",
-			"color": {
-				"user": "#FFC90E", // Color 3
-				"at": "#646464", // Color 5
-				"host": "#FFC90E" // Color 3
-			}
+			"type": "title"
 		},
 		// :::: Separator ::::
 		{
@@ -45,66 +32,53 @@
 		// :::: Software ::::
 		{
 			"type": "os",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "kernel",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "uptime",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "packages",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "shell",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
-
 		// :::: Separator ::::
 		{
 			"type": "custom",
 			"format": "::::::::::::::::::::::::::::::",
 			"outputColor": "646464"
 		},
-
 		// :::: Hardware ::::
 		{
 			"type": "cpu",
-			"key": " ", // Nerd Font v3 CPU icon
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "gpu",
-			"key": "󰢮 ",
-			"keyColor": "#FFC90E"
+			"key": "󰢮 "
 		},
 		{
 			"type": "memory",
-			"key": " ",
-			"keyColor": "#FFC90E"
+			"key": " "
 		},
 		{
 			"type": "display",
-			"key": "󰍹 ",
-			"keyColor": "#FFC90E"
+			"key": "󰍹 "
 		},
-
 		// ::::: Separator :::::
 		{
 			"type": "custom",
 			"format": "::::::::::::::::::::::::::::::",
 			"outputColor": "646464"
 		},
-
 		// ::::: Brand Footer ::::
 		{
 			"type": "custom",
@@ -116,10 +90,8 @@
 			// 5. Dark-Gray  (#646464) -> 100;100;100
 			// 6. Dark       (#282828) -> 40;40;40
 			// 7. Black      (#101010) -> 16;16;16
-
 			"format": "\u001b[38;2;255;255;255m● \u001b[38;2;244;244;244m● \u001b[38;2;214;214;214m● \u001b[38;2;100;100;100m● \u001b[38;2;40;40;40m● \u001b[38;2;16;16;16m● \u001b[38;2;255;201;14m●"
 		},
-
 		"break"
 	]
 }
