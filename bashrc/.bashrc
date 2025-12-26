@@ -8,7 +8,7 @@ command -v fastfetch >/dev/null 2>&1 && fastfetch || { command -v neofetch >/dev
 # check if `eza` is installed
 if command -v eza > /dev/null 2>&1; then
     # use `eza` with icons
-    alias ll="eza -lah --icons"
+    alias ll="eza -lah --icons --git"
 else
     # fallback to standard `ls`
     alias ll="ls -lah"

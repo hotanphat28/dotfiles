@@ -1,0 +1,107 @@
+# Golden: #FFC90E | White: #FFFFFF | Light: #F4F4F4
+# Light-Gray: #D6D6D6 | Dark-Gray: #646464
+
+colourful: true
+
+# 📂 File Kinds
+filekinds:
+  directory:
+    foreground: "#FFC90E" # Golden
+    is_bold: true
+  symlink:
+    foreground: "#D6D6D6" # Light-Gray
+    is_italic: true
+  executable:
+    foreground: "#FFFFFF" # White
+    is_bold: true
+  mount_point:
+    foreground: "#FFC90E" # Golden
+    is_underline: true
+
+# 🔒 Permissions
+perms:
+  user_read:
+    foreground: "#D6D6D6"
+  user_write:
+    foreground: "#FFFFFF"
+  user_execute_file:
+    foreground: "#FFC90E"
+    is_bold: true
+  group_execute:
+    foreground: "#FFC90E"
+  other_execute:
+    foreground: "#FFC90E"
+
+# 📏 Size & Users
+size:
+  major:
+    foreground: "#FFFFFF" # White
+  minor:
+    foreground: "#D6D6D6" # Light-Gray
+  number_byte:
+    foreground: "#D6D6D6"
+  number_kilo:
+    foreground: "#FFFFFF"
+  number_mega:
+    foreground: "#FFC90E" # Golden (Highlight large files)
+  number_giga:
+    foreground: "#FFC90E"
+    is_bold: true
+
+users:
+  user_you:
+    foreground: "#FFFFFF"
+    is_bold: true
+  user_other:
+    foreground: "#D6D6D6"
+  group_yours:
+    foreground: "#D6D6D6"
+  group_other:
+    foreground: "#646464" # Dark-Gray
+
+# 📅 Dates
+date:
+  user:
+    foreground: "#D6D6D6"
+  group:
+    foreground: "#646464"
+
+# 🔗 Links & Inodes
+links:
+  normal:
+    foreground: "#D6D6D6"
+  multi_link:
+    foreground: "#FFC90E"
+
+inode:
+  valid:
+    foreground: "#646464"
+
+# 🌿 Git Status
+git:
+  new:
+    foreground: "#FFC90E" # Golden
+  modified:
+    foreground: "#FFFFFF" # White
+  deleted:
+    foreground: "#646464" # Dark-Gray
+  renamed:
+    foreground: "#D6D6D6"
+  typechange:
+    foreground: "#D6D6D6"
+
+# 🧱 Blocks & Header
+blocks:
+  header:
+    foreground: "#646464" # Dark-Gray headers
+    is_underline: true
+
+# 🧩 File Extensions (Examples for Dev)
+extensions:
+  "zip": { foreground: "#D6D6D6" }
+  "tar": { foreground: "#D6D6D6" }
+  "gz":  { foreground: "#D6D6D6" }
+  "7z":  { foreground: "#D6D6D6" }
+  "yml": { foreground: "#FFFFFF", is_bold: true }
+  "json":{ foreground: "#FFFFFF" }
+  "md":  { foreground: "#F4F4F4" }
