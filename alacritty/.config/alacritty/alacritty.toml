@@ -1,14 +1,3 @@
-# ============================================================
-# BRAND IDENTITY: GOLDEN & GREYSCALE
-# ============================================================
-# Brand Accent: Golden (#FFC90E)
-# Brand Neutrals: Dark (#282828), Black (#101010), 
-#                 Dark-Gray (#646464), Light-Gray (#D6D6D6),
-#                 Light (#F4F4F4), White (#FFFFFF)
-# ============================================================
-
-# Best Practice: Auto-reload config on save
-live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
@@ -119,3 +108,16 @@ blue    = "#89B4FA"
 magenta = "#F5C2E7"
 cyan    = "#94E2D5"
 white   = "#D6D6D6"
+
+[general]
+# ============================================================
+# BRAND IDENTITY: GOLDEN & GREYSCALE
+# ============================================================
+# Brand Accent: Golden (#FFC90E)
+# Brand Neutrals: Dark (#282828), Black (#101010), 
+#                 Dark-Gray (#646464), Light-Gray (#D6D6D6),
+#                 Light (#F4F4F4), White (#FFFFFF)
+# ============================================================
+
+# Best Practice: Auto-reload config on save
+live_config_reload = true
