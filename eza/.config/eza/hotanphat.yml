@@ -61,10 +61,7 @@ users:
 
 # 📅 Dates
 date:
-  user:
-    foreground: "#D6D6D6"
-  group:
-    foreground: "#646464"
+  foreground: "#D6D6D6"
 
 # 🔗 Links & Inodes
 links:
@@ -98,10 +95,10 @@ blocks:
 
 # 🧩 File Extensions (Examples for Dev)
 extensions:
-  "zip": { foreground: "#D6D6D6" }
-  "tar": { foreground: "#D6D6D6" }
-  "gz":  { foreground: "#D6D6D6" }
-  "7z":  { foreground: "#D6D6D6" }
-  "yml": { foreground: "#FFFFFF", is_bold: true }
-  "json":{ foreground: "#FFFFFF" }
-  "md":  { foreground: "#F4F4F4" }
+  "zip":  { foreground: "#D6D6D6" }
+  "tar":  { foreground: "#D6D6D6" }
+  "gz":   { foreground: "#D6D6D6" }
+  "7z":   { foreground: "#D6D6D6" }
+  "yml":  { foreground: "#FFFFFF", is_bold: true }
+  "json": { foreground: "#FFFFFF" }
+  "md":   { foreground: "#F4F4F4" }
