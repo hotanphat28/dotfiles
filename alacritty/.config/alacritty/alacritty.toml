@@ -6,18 +6,18 @@ TERM = "xterm-256color"
 # FONT CONFIGURATION
 # ============================================================
 [font]
-size = 13.0 
+size = 10
 
 [font.normal]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "0xProto Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "0xProto Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "CaskaydiaMono Nerd Font Mono"
+family = "0xProto Nerd Font Mono"
 style = "Italic"
 
 # ============================================================
