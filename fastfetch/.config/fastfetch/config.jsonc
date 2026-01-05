@@ -34,24 +34,32 @@
 		},
 		// :::: Software ::::
 		{
+			"type": "uptime",
+			"key": ":. up "
+		},
+		{
 			"type": "os",
-			"key": " "
+			"key": ":. os "
 		},
 		{
 			"type": "kernel",
-			"key": " "
-		},
-		{
-			"type": "uptime",
-			"key": " "
+			"key": ":. kernel "
 		},
 		{
 			"type": "packages",
-			"key": " "
+			"key": ":. packages "
 		},
 		{
 			"type": "shell",
-			"key": " "
+			"key": ":. shell "
+		},
+		{
+			"type": "de",
+			"key": ":. de "
+		},
+		{
+			"type": "wm",
+			"key": ":. wm "
 		},
 		// :::: Separator ::::
 		{
@@ -62,19 +70,24 @@
 		// :::: Hardware ::::
 		{
 			"type": "cpu",
-			"key": " "
+			"key": ":. cpu "
 		},
 		{
 			"type": "gpu",
-			"key": "󰢮 "
+			"key": ":. gpu "
 		},
 		{
 			"type": "memory",
-			"key": " "
+			"key": ":. memory "
 		},
 		{
 			"type": "display",
-			"key": "󰍹 "
+			"key": ":. display "
+		},
+		{
+			"type": "disk",
+			"key": ":. disk ",
+			"format": "[{mountpoint}] - {size-used} / {size-total} ({size-percentage})"
 		},
 		// ::::: Separator :::::
 		{
