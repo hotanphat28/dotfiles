@@ -29,70 +29,70 @@
 		// :::: Separator ::::
 		{
 			"type": "custom",
-			"format": "::::::::::::::::::::::::::::::",
+			"format": "⡎⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈⠈",
 			"outputColor": "#646464" // Color 5
 		},
 		// :::: Software ::::
 		{
 			"type": "uptime",
-			"key": ":. up "
+			"key": "⡗ up "
 		},
 		{
 			"type": "os",
-			"key": ":. os "
+			"key": "⡗ os "
 		},
 		{
 			"type": "kernel",
-			"key": ":. kernel "
+			"key": "⡗ kernel "
 		},
 		{
 			"type": "packages",
-			"key": ":. packages "
+			"key": "⡗ packages "
 		},
 		{
 			"type": "shell",
-			"key": ":. shell "
+			"key": "⡗ shell "
 		},
 		{
 			"type": "de",
-			"key": ":. de "
+			"key": "⡗ de "
 		},
 		{
 			"type": "wm",
-			"key": ":. wm "
+			"key": "⡗ wm "
 		},
 		// :::: Separator ::::
 		{
 			"type": "custom",
-			"format": "::::::::::::::::::::::::::::::",
+			"format": "⡕⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐⠐",
 			"outputColor": "646464"
 		},
 		// :::: Hardware ::::
 		{
 			"type": "cpu",
-			"key": ":. cpu "
+			"key": "⡗ cpu "
 		},
 		{
 			"type": "gpu",
-			"key": ":. gpu "
+			"key": "⡗ gpu "
 		},
 		{
 			"type": "memory",
-			"key": ":. memory "
+			"key": "⡗ memory "
 		},
 		{
 			"type": "display",
-			"key": ":. display "
+			"key": "⡗ display "
 		},
 		{
 			"type": "disk",
-			"key": ":. disk ",
+			"key": "⡗ disk ",
 			"format": "[{mountpoint}] - {size-used} / {size-total} ({size-percentage})"
 		},
 		// ::::: Separator :::::
 		{
 			"type": "custom",
-			"format": "::::::::::::::::::::::::::::::",
+			"format": "⢇⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀",
 			"outputColor": "646464"
 		},
 		// ::::: Brand Footer ::::
