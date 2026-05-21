@@ -3,9 +3,15 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Python environment (pyenv)
 export PYENV_ROOT="$HOME/.pyenv"
 if [[ -d "$PYENV_ROOT" ]]; then
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init --path)"
-    command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+        # Windows (pyenv-win): only needs PATH, no init commands
+        export PATH="$PYENV_ROOT/pyenv-win/bin:$PYENV_ROOT/pyenv-win/shims:$PATH"
+    else
+        # Linux / macOS
+        export PATH="$PYENV_ROOT/bin:$PATH"
+        command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init --path)"
+        command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
+    fi
 fi
 
 # System fetch
