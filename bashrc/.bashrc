@@ -3,16 +3,9 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Python environment (pyenv)
 export PYENV_ROOT="$HOME/.pyenv"
 if [[ -d "$PYENV_ROOT" ]]; then
-    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
-        # Windows (pyenv-win)
-        export PYENV_ROOT="$PYENV_ROOT/pyenv-win"
-        export PATH="$PYENV_ROOT/bin:$PYENV_ROOT/shims:$PATH"
-    else
-        # Linux / MacOS
-        export PATH="$PYENV_ROOT/bin:$PATH"
-        command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init --path)"
-        command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
-    fi
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init --path)"
+    command -v pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
 fi
 
 # System fetch
@@ -42,16 +35,13 @@ alias gpull="git pull" # to pull new changes of the current branch
 alias gpush="git push" # to push new changes of the current branch
 
 lazyg() {
-    git add . && \
-    git commit -m "$*" && \
-    git push
+    if [[ -z "$*" ]]; then
+        echo "Usage: lazyg <commit message>"
+        return 1
+    fi
+    git add . && git commit -m "$*" && git push
 }
 
-# WSL alias (Windows only)
-if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
-    alias wsll="wsl -l -v" # to show all wsl local verbose
-    alias wsllo="wsl -l -o" # to show all wsl online verbose
-fi
 
 # apply custom oh-my-posh theme to the bash prompt
 if command -v oh-my-posh >/dev/null 2>&1; then
