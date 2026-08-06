@@ -33,8 +33,8 @@ else
     alias ll="ls -lah"
 fi
 
-# Flatpak VSCode alias
-alias code='flatpak run com.visualstudio.code'
+# VSCode alias
+alias code='/usr/share/code/bin/code'
 
 # Git alias
 alias gclone="git clone" # to clone a repo
