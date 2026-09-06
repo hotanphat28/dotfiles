@@ -11,6 +11,7 @@ The repository is organized into packages, each corresponding to a specific tool
 - **eza**: `eza` (modern `ls` replacement) configuration/theme
 - **fastfetch**: System information fetch tool configuration
 - **poshthemes**: [Oh My Posh](https://ohmyposh.dev/) themes
+- **themes**: Desktop environment themes (e.g., Pop!_OS COSMIC)
 
 ## 🛠️ Included Configurations
 
@@ -105,6 +106,10 @@ Includes custom themes:
 
 ### Fastfetch
 Includes custom configuration and several ASCII art text files in `fastfetch/.config/fastfetch/`.
+
+### Pop!_OS COSMIC
+Includes a custom dark theme:
+- `hotanphat28-dark.ron` located in `themes/pop-os/`
 
 ## 🤝 Contributing
 
